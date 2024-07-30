@@ -1,0 +1,17 @@
+services:
+ arch:
+  image: archlinux
+#  command: /bin/bash
+  stdin_open: true
+  tty: true
+#  ports:
+#   - 80
+#  networks:
+#   - host
+
+#  volumes:
+#   - data:/
+#volumes:
+# data:
+#networks:
+# host:

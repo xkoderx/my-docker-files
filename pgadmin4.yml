@@ -1,0 +1,9 @@
+version: '2'
+services:
+  pgadmin:
+    image: dpage/pgadmin4
+    ports:
+      - '80:80'
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=ko@der.com
+      - PGADMIN_DEFAULT_PASSWORD=koder

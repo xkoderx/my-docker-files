@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  kms:
+    image: teddysun/kms
+    container_name: mks
+    ports:
+      - '1688:1688'
+    restart: always
+    stdin_open: true
+    healthcheck:
+      disable: true

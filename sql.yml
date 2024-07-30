@@ -1,0 +1,15 @@
+version: '2'
+services:
+    msql:
+        image: kontruoo/sql1:0.1
+        ports:
+            - '1433:1433'
+        environment:
+            #- 'ACCEPT_EULA=Y'
+            - 'MSSQL_SA_PASSWORD=K1ngwizard'
+        volumes:
+            - 'sqlsrv:/var/opt/mssql'
+volumes:
+    sqlsrv:
+        driver: local
+
